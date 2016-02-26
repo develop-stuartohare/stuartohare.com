@@ -1,0 +1,59 @@
+@import './variables';
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url('assets/fonts/raleway.woff2') format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Didact+Gothic);
+
+@import 'assets/fonts/icomoon/icomoon.less';
+
+
+html, body {
+
+    // font-family: 'Raleway',Arial,Helvetica,sans-serif;
+    font-family: 'Didact Gothic',Arial,Helvetica,sans-serif;
+    font-size: @font-size;
+    line-height: @line-height;  
+    letter-spacing:@letter-spacing;
+    
+    font-weight: @font-weight;
+
+    -webkit-font-smoothing: antialiased;	
+}
+
+
+h1 {
+	font-size: @h1-font-size;
+	line-height: @h1-font-size * 1.5;
+}
+
+h2 {
+  font-size: @h2-font-size;
+  line-height: @h2-font-size * 1.5;
+}
+
+h3 {
+  font-size: @h3-font-size;
+  line-height: @h3-font-size * 1.5;
+}
+
+h4 {
+  font-size: @h4-font-size;
+  line-height: @h4-font-size * 1.5;
+}
+
+
+.header {
+  color: @header-color;
+  font-weight: bold;          
+  letter-spacing: .480em;  
+}
+
+p {
+	margin-bottom:@font-size * 1.8;
+}

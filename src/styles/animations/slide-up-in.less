@@ -1,0 +1,28 @@
+@initialDelay : 0.5s;
+
+[inview].slide-up-in {
+
+	& > *{
+		opacity:0;
+		transform: translateY(50px);
+		transition: all 0.5s;				
+	}
+
+
+	.delays(@total, @count:1 ) when(@count < @total){
+		& > *:nth-child(@{count}) {				
+			transition-delay:@initialDelay + (0.2s*@count);					
+		}			
+		.delays(@total, @count+1);	
+	}	
+	
+	.delays(20);	
+}	
+
+[inview="true"].slide-up-in {
+	& > *{
+		opacity: 1;
+		transform: translateY(0);			
+	}		
+
+}

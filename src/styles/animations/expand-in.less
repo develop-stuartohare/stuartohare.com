@@ -1,0 +1,18 @@
+@initialDelay : 0.5s;
+
+[inview].expand-in {
+
+	height : 0px;
+	opacity: 0;
+	transition: all 0.5s;
+	
+	&.expand-in-delay {
+		transition-delay: 1s;	
+	}
+}	
+
+[inview="true"].expand-in {
+	height:200px;
+	opacity: 1;
+}
+

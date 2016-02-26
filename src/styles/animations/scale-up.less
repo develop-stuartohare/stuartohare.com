@@ -1,0 +1,16 @@
+@initialDelay : 0.5s;
+
+[inview].scale-up {
+
+	transform : scale(0);
+	transition: all 0.5s;
+	
+	&.scale-up-delay {
+		transition-delay: 1s;	
+	}
+}	
+
+[inview="true"].scale-up {
+	transform : scale(1);
+}
+

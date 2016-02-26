@@ -1,0 +1,16 @@
+@initialDelay : 0.5s;
+
+[inview].fade-in {
+
+	opacity:0;	
+	transition: all 2s;
+	
+	&.fade-in-delay {
+		transition-delay: 1s;	
+	}
+}	
+
+[inview="true"].fade-in {
+	opacity:1;
+}
+
