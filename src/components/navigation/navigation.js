@@ -79,7 +79,3 @@ class Navigation extends Component {
 
 export default Navigation;
 
-                        // {this.context.routes.childRoutes.map((route, idx)=>{
-                            
-                        //     return <NavigationItem key={idx} {...route}/>
-                        // })}
