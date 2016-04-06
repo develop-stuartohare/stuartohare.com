@@ -10,27 +10,12 @@ import Grid from 'react-bootstrap/lib/Grid';
 import Row from 'react-bootstrap/lib/Row';
 import Col from 'react-bootstrap/lib/Col';
 import Glyphicon from 'react-bootstrap/lib/Glyphicon';
+import ImageGallery from './image-gallery';
+
+
 
 import './about-me.less';
 
-
-// const Text = function(props){
-
-// 	return (					
-// 		<Component className="slide-up-in" inView>
-// 			<p>
-// 				I am an experienced software developer with over 8 years industry experience and a Masters in Internet and Networking Systems. I specialise in developing bespoke web applications, working with web technologies to deliver sophisticated, interactive and feature-rich websites.
-// 			</p>                            
-// 			<p>
-// 				I have worked on a wide array of projects, from traditional websites to games to interactive e-learning courses, targeting a range of platforms, including smartphones and tablets.
-// 				I have developed computer games for AAA games consoles and Xbox Kinect, iPad/iPhone Apps for corporate conferences, bespoke Webex-style conferencing tools and web-based instant messengers, chatrooms and forums.
-// 			</p>
-// 			<p>
-// 				I have worked with a diverserse selection of clients, including: Lloyds Banking Group, Burberry, Deutcshe Bank, the Civil Service, the British Medical Association, Disney and Barclays Bank.
-// 			</p>
-// 		</Component>			
-// 	);	
-// }
 
 class MoreDropDown extends Component{
 
@@ -201,9 +186,23 @@ class AboutMeRoute extends Route {
 						</Col>															
 					</Row>						
 				</Grid>	
+				<Grid className="section">		
+					<Col className="about-me-item">			
+					<Component className="slide-up-in" inView>			
+						<Mast glyph="cog"/>	
+						<h3 className="header">Portfolio</h3>                          
+						<p>
+							I have worked on a wide array of projects, from websites to games to interactive e-learning courses.
+							I have developed iOS Apps for corporate conferences, web-based conferencing and instant messenger tools and computer games for PS2, PS3, Nintendo Wii and Xbox 360.
+						</p>	
+						<ImageGallery/>							
+					</Component>											
+					</Col>	
+				</Grid>					
 				<div className="section">	
 					<Circles2/>	
-				</div>																					
+				</div>		
+
 			</div>				
 		);
 	}
@@ -213,35 +212,4 @@ class AboutMeRoute extends Route {
 export default AboutMeRoute;
 
 
-
-
-
-
-
-// var images = [
-// 	"www/images/portfolio/disney/disney-logo.png",
-// 	"www/images/portfolio/civilservice/civilservice-logo.png",
-// 	"www/images/portfolio/deutschebank/deutsche-bank-logo.png",
-// 	"www/images/portfolio/bma/bma.png",
-// 	"www/images/portfolio/burberry/burberry-logo.png",
-// 	"www/images/portfolio/lloyds/lloyds_banking_group1.png",
-// 	"www/images/portfolio/barclays/barclays-logo.png",
-// 	"www/images/portfolio/pwc/pwc-logo.png"
-// ];
-
-// const Images = function(prop){
-
-
-// 	return (					
-// 		<Row className="slide-up-in" inView>
-// 			{images.map((image, idx)=>{
-// 				return (
-// 					<Col className="clients-image" key={idx}>
-// 						<Image src={image} alt=""/>
-// 					</Col>
-// 				);
-// 			})}
-// 		</Row>				
-// 	);	
-// }
 
