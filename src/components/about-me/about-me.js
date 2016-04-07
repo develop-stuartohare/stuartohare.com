@@ -139,7 +139,7 @@ const AboutMeBackend = function(props){
 				Working with an array of technologies, I build sturdy, stay-up, well tested server applications - ensuring data is always retrieved and delivered efficiently to the end user.
 			</p>	
 			<MoreDropDown label="technologies i work with">				
-				Node, PHP, Express.js, Sails js, SQL, MongoDB, Wordpress , Code Igniter, Zend, Dropbox API, Moodle LMS, Totara LMS.				
+				Docker, Node, PHP, Express.js, Sails js, Mysql, MongoDB, Wordpress , Code Igniter, Zend, Dropbox API, Moodle LMS, Totara LMS.				
 			</MoreDropDown>			
 		</Component>			
 	);	
