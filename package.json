@@ -7,9 +7,8 @@
     "preinstall": "npm install -g webpack",
     "post:install":"npm run build",    
     "build:dev": "webpack -d -w --progress",
-    "build": "webpack -p --progress",
-    "prestart": "npm install",
-    "start": "docker run --name stuartohare.com -d -p 8080:80 stuartohare.com"
+    "build": "webpack -p --progress",    
+    "start": ""
   },
   "author": "Stuart O'Hare",
   "license": "ISC",
