@@ -3,9 +3,8 @@ import ReactDOM from 'react-dom';
 import _ from 'underscore';
 import Component from '../../lib/component';
 import Route from '../../lib/route';
-import Circles from '../../components/circles';
-import Circles2 from '../../components/circles2';
-import Image from '../../components/image';
+import IntroCircle from '../../components/intro-circle';
+import OutroCircle from '../../components/outro-circle';
 import Grid from 'react-bootstrap/lib/Grid';
 import Row from 'react-bootstrap/lib/Row';
 import Col from 'react-bootstrap/lib/Col';
@@ -155,7 +154,7 @@ class AboutMeRoute extends Route {
 		return (						
 			<div className="about-me" id={this.props.id}>
 				<div className="section">	
-					<Circles/>	
+					<IntroCircle/>	
 				</div>																												
 				<Grid className="section">								
 					<Row>
@@ -200,7 +199,7 @@ class AboutMeRoute extends Route {
 					</Col>	
 				</Grid>					
 				<div className="section">	
-					<Circles2/>	
+					<OutroCircle/>	
 				</div>		
 
 			</div>				

@@ -1,7 +1,7 @@
 import 'jquery-inview';
 import React from 'react';
 import ReactDOM from 'react-dom'
-import App from './routes/app/app';
+import App from './components/app';
 import './styles/global.less';
 
 

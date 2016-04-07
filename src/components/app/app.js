@@ -1,7 +1,7 @@
 import React from 'react';
 import Component from '../../lib/component';
-import Navigation from '../../components/navigation';
-import AboutMe from '../about-me/about-me';
+import Navigation from '../navigation';
+import AboutMe from '../about-me';
 
 import './app.less';
 
